@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr=['小明','小红',['小花']]
+    let brr=[...arr]
+    arr[2].push('小黑')
+    arr[2]='小白'
+    console.log(brr);
+    console.log(arr,'@');
+    console.log('---------------------------------------');
+    let obj = {
+      name:'李四',
+      age:18,
+      jineng:{
+        sing:'唱歌'
+      }
+    }
+    let obj2={...obj}
+    obj.jineng.sing='表演'
+    console.log(obj2);
+  </script>
+</body>
+</html>
